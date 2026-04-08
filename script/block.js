@@ -12,7 +12,7 @@ class block {
         //checks whether clicked or flagged
         if (!this.clicked && !this.flagged) {
             this.clicked = true;
-            this.cell.style.backgroundImage = 'url("../images/dirt.png")';
+            this.cell.style.backgroundImage = 'url("Assignment_Minesweeper/images/dirt.png")';
             //checks whether mine or not
             if (this.mine) {
                 global.gameOver();
@@ -56,7 +56,7 @@ class block {
             if (!this.flagged) {
                 //flags block
                 this.flagged = true;
-                this.cell.style.backgroundImage = 'url("../images/marker.png")';
+                this.cell.style.backgroundImage = 'url("Assignment_Minesweeper/images/marker.png")';
 
                 global.score -= 1;
                 global.scoreArea.innerHTML = global.score;
@@ -70,7 +70,7 @@ class block {
                 } else {
                     this.cell.style.background = "aqua";
                 }*/
-                    this.cell.style.backgroundImage = 'url("../images/grass.png")';
+                    this.cell.style.backgroundImage = 'url("Assignment_Minesweeper/images/grass.png")';
 
                 global.score += 1;
                 global.scoreArea.innerHTML = global.score;
