@@ -1,0 +1,91 @@
+@font-face {
+    font-family: "Tiny5";
+    src: url("/fonts/Tiny5-Regular.ttf");
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    background-image: url(images/bg.png);
+    background-size: cover;
+}
+#start, #game, #help, #win, #lose{
+    background-color: black;
+    border-radius: 5px;
+    padding: 5px;
+    width: 640px;
+    margin: auto;
+}
+#start{
+    text-align: center;
+    height: 150px;
+}
+#win{
+    text-align: center;
+    height: 150px;
+}
+#lose{
+    text-align: center;
+    height: 150px;
+}
+#help{
+    text-align: center;
+    height: 220px;
+}
+ul{
+    text-align: left;
+    list-style: square;
+}
+#game{
+    flex-direction: column;
+    max-height: 700px;
+}
+table{
+    border-collapse: collapse;
+    border: 3px solid grey;
+    margin: auto;
+    padding: 0%;
+}
+td{
+    background-color: #22381f;
+    background-image:url("/images/grass.png");
+    background-size: cover;
+    text-align: center;
+    padding: 0%;
+    margin: 0%;
+    height: 30px;
+    width: 30px;
+}
+#reset{
+    margin: 5px auto;
+}
+#game div {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#game div p{
+    margin: 5px 50px;
+}
+#ps{
+    width: 110px;
+}
+#pt{
+    width: 70px;
+}
+h1,h2,h3,p,li,button,td{
+    color: white;
+    font-family: "Tiny5";
+}
+button{
+    background-color: black;
+    border: none;
+    text-align: center;
+    margin: 5px;
+    font-size: 18px;
+}
+button:hover{
+    color: gray;
+}

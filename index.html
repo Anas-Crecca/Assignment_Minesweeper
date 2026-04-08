@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <title>Grave-digging</title>
+</head>
+
+<body>
+    <div id="start" style="display: block;">
+        <h1>Grave-digging</h1>
+        <div>
+            <button id="startBt">>Easy</button>
+            <button id="startBt2">>Medium</button>
+            <button id="startBt3">>Hard</button>
+        </div>
+        <button id="helpBt">>Rules</button>
+    </div>
+    <div id="game" style="display: none;">
+        <div>
+        <p id="ps">Markers left: <span id="score">0</span> </p>
+        <p id="pt">Time: <span id="time">0</span></p>
+        </div>
+        <table id="grid"></table>
+        <button id="reset">>Reset</button>
+    </div>
+    <div id="help" style="display: none;">
+        <h2>How to Play:</h2>
+        <h3>Don't dig up any corpses:</h3>
+        <ul>
+            <li>Click on a Field to dig it up</li>
+            <li>Right-click on a Field to mark it</li>
+            <li>Dug-up Fields will tell you how many Corpses are in the 8 Fields surrounding it</li>
+        </ul>
+        <button id="back">>Back</button>
+    </div>
+    <div id="win" style="display: none;">
+        <h2>You win!</h2>
+        <p>Go again?</p>
+        <button id="restart1">>Restart!</button>
+    </div>
+    <div id="lose" style="display: none;">
+        <h2>You've lost!</h2>
+        <p>Try again?</p>
+        <button id="restart2">>Restart!</button>
+    </div>
+    <script type="module" src="./script/main.js"></script>
+
+</body>
+
+</html>
